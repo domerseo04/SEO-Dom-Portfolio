@@ -343,8 +343,12 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
   .nav-links>li{width:100%}
   .nav-links>li>a{font-size:1rem;color:var(--black);padding:11px 0;border-bottom:1px solid var(--line);width:100%;justify-content:space-between}
   .has-drop{width:100%}
-  .dropdown{position:static;transform:none;opacity:1;pointer-events:auto;box-shadow:none;border:none;padding:0;background:transparent;display:none;width:100%}
-  .dropdown.mob-open{display:block}
+  .dropdown{position:static;transform:none;opacity:1;pointer-events:auto;box-shadow:none;border:none;border-radius:0;padding:0 0 0 12px;background:transparent;display:none;width:100%}
+.dropdown.mob-open{display:block}
+.dropdown .drop-item{padding:10px 0;border-bottom:0.5px solid var(--line)}
+.dropdown .drop-item:last-child{border-bottom:none}
+.dropdown .drop-name{font-size:.95rem;color:var(--black)}
+.dropdown .drop-sub{font-size:.72rem;color:var(--gray-3)}
   .hero-btns{flex-direction:column}
   .btn{width:100%;justify-content:center}
   .edu-grid{grid-template-columns:1fr}
