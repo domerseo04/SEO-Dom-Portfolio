@@ -345,10 +345,16 @@ button{cursor:pointer;border:none;background:none;font-family:inherit}
   .has-drop{width:100%}
   .dropdown{position:static;transform:none;opacity:1;pointer-events:auto;box-shadow:none;border:none;border-radius:0;padding:0 0 0 12px;background:transparent;display:none;width:100%}
 .dropdown.mob-open{display:block}
-.dropdown .drop-item{padding:10px 0;border-bottom:0.5px solid var(--line)}
+.dropdown .drop-item{
+  padding:10px 0;
+  border-bottom:0.5px solid var(--line);
+  border-radius:0;
+  background:transparent;
+}
 .dropdown .drop-item:last-child{border-bottom:none}
-.dropdown .drop-name{font-size:.95rem;color:var(--black)}
+.dropdown .drop-name{font-size:.95rem;color:var(--black);font-weight:600}
 .dropdown .drop-sub{font-size:.72rem;color:var(--gray-3)}
+.dropdown .drop-ico{display:none}
   .hero-btns{flex-direction:column}
   .btn{width:100%;justify-content:center}
   .edu-grid{grid-template-columns:1fr}
